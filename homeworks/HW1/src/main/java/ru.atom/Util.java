@@ -13,14 +13,14 @@ public class Util {
      * @return the largest of values.
      */
     public static int max(int[] values) {
-        int a = 0;
+        int aaa = 0;
         for (int i = 0; i < values.length; i++) {
 
-            if (values[i] > a){
-                a = values[i];
+            if (values[i] > aaa){
+                aaa = values[i];
             }
         }
-        return a;
+        return aaa;
     }
 
     /**
@@ -30,11 +30,11 @@ public class Util {
      * @return the sum of all values.
      */
     public static long sum(int[] values) {
-        long a = 0;
+        long aaa = 0;
         for (int i = 0; i < values.length; i++) {
-            a = a + values[i];
+            aaa = aaa + values[i];
         }
-        return a;
+        return aaa;
     }
 
 
