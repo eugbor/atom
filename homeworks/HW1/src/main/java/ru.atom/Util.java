@@ -19,7 +19,7 @@ public class Util {
 
         for (int i = 0; i < values.length; i++) {
 
-            if (values[i] > aaa){
+            if (values[i] > aaa) {
 
                 aaa = values[i];
 
