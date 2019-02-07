@@ -61,21 +61,21 @@ public class Point implements Collider /* super class and interfaces here if nec
         if (other instanceof Point) {
 
             Point point = (Point) other;
-            return getX() == point.getX() &
-                    getY() == point.getY();
+            return getX() == point.getX()
+                    & getY() == point.getY();
 
         }
         if (other instanceof Geometry) {
 
             Geometry bar = (Geometry) other;
-            return (getX() >= bar.getXl() &
-                    getX() <= bar.getXr() &
-                    getY() >= bar.getYl() &
-                    getY() <= bar.getYr());
+            return (getX() >= bar.getXl()
+                    & getX() <= bar.getXr()
+                    & getY() >= bar.getYl()
+                    & getY() <= bar.getYr());
 
         }
 
         return false;
-        
+
     }
 }
