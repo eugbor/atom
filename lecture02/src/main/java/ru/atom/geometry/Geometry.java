@@ -17,26 +17,36 @@ public final class Geometry implements Collider {
     int yr;
 
     public int getXl() {
+
         return xl;
+
     }
 
     public int getYl() {
+
         return yl;
+
     }
 
     public int getXr() {
+
         return xr;
+
     }
 
     public int getYr() {
+
         return yr;
+
     }
 
     private Geometry(int xl, int yl, int xr, int yr) {
+
         this.xl = xl;
         this.yl = yl;
         this.xr = xr;
         this.yr = yr;
+
     }
 
     /**
@@ -53,20 +63,28 @@ public final class Geometry implements Collider {
         int xr;
         int yr;
 
-        if (firstCornerX < secondCornerX){
+        if (firstCornerX < secondCornerX) {
+
             xl = firstCornerX;
             xr = secondCornerX;
+
         } else {
+
             xr = firstCornerX;
             xl = secondCornerX;
+
         }
 
-        if (firstCornerY < secondCornerY){
+        if (firstCornerY < secondCornerY) {
+
             yl = firstCornerY;
             yr = secondCornerY;
+
         } else {
+
             yr = firstCornerY;
             yl = secondCornerY;
+
         }
 
         return new Geometry(xl, yl, xr, yr);
