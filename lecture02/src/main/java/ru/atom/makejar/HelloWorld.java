@@ -9,10 +9,6 @@ import ru.atom.geometry.Point;
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println(getHelloWorld());
-
-//        Collider collider = new Point(1,2);
-//
-//        Point point = new Point(1,2);
         }
 
     public static String getHelloWorld() {
