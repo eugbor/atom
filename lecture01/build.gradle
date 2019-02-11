@@ -14,4 +14,13 @@ checkstyle {
     ignoreFailures = false
     toolVersion = '7.5'
     configFile = new File('../config/checkstyle/checkstyle.xml')
+<<<<<<< HEAD
 }
+=======
+}
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    manifest { attributes 'Main-Class': 'ru.atom.HelloWorld' }
+}
+>>>>>>> dbefc0b47d55a0df986ff9eb159b0babab112707
